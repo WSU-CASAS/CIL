@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -49,7 +50,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-cover/
 
 # Translations
 *.mo
@@ -72,7 +72,6 @@ instance/
 docs/_build/
 
 # PyBuilder
-.pybuilder/
 target/
 
 # Jupyter Notebook
@@ -83,9 +82,7 @@ profile_default/
 ipython_config.py
 
 # pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+.python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -94,22 +91,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
 # Celery stuff
@@ -146,15 +128,60 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+#repo specific ignores
+tests/tm000_2016.02.07_AMsegment.xlsm
+tests/tm000_2016.02.07-2016.02.08.xlsm
+tests/tm000_2016.02.10-2016.02.12.xlsm
+tests/tm000.20160210-20160212_20220819.192044.txt
+tests/tm000.20160207_AMsegment.txt
+tests/tm000.20160207-20160208_20220622.194545.txt
+tests/casas_example_entity.txt
+tests/casas_example_entitytemp.txt
+tests/casas_example_everything.txt
+tests/outofhome_examples.txt
+*.ipynb
+casas_measures/tm015_all_inactivityseq.csv
+casas_measures/tm000.20160207_20160207_inactivityseq2.csv
+casas_measures/tm000.20160207_20160207_inactivityseq3.csv
+*.pkl
+casas_measures/cil_data_params.json
+casas_measures/cil_data_params.yml
+casas_measures/casas_measures.py.lprof
+casas_measures/pickle_all_ignored_20230314.txt
+casas_measures/summarize_all_inactivity_sensors_ignored.txt
+casas_measures/summarize_all_inactivity_sensors_ignored_combined.txt
+casas_measures/summarize_all_particpants_raw_data.txt
+casas_measures/cil_data_params_20230314.yml
+analysis/pickle_all_ignored_20230314.txt
+analysis/summarize_all_inactivity_sensors_ignored.txt
+analysis/summarize_all_inactivity_sensors_ignored_combined.txt
+analysis/summarize_all_particpants_raw_data.txt
+analysis/tm000.20160207_20160207_inactivityseq2.csv
+analysis/tm000.20160207_20160207_inactivityseq3.csv
+casas_measures/tm000.20160207_20160207_bedroomcombined.csv
+tests/tm000.20211107-20211108_20230321.225843_utc.txt
+tests/tm000.20211107-20211108_20230321.230212_local.txt
+tests/tm000.20211107-20211108_20230321.230407.txt
+*.png
+casas_measures/test_upsampled.csv
+analysis/pickle_dfs_output_20230427.txt
+analysis/pickled_dfs_output_newcutoffs_20230508.txt
+*.csv
+analysis/ONsensorsonly_and_inact_dfs.out
+analysis/plots
+cil_data_params_strict.yml
+cil_data_params_strict_2023_06_15.yml
+analysis/tm015_and_tm017_bfit.zip
+analysis/tm015_baseline
+analysis/tm015_intervention
+analysis/tm017_baseline
+analysis/tm017_intervention
+analysis/tm018_baseline
+analysis/tm018_intervention
+analysis/tm018_bfit_bcd2.zip
+analysis/fr02_timeints_above4m_sum.xlsx
+analysis/pickle_dfs_roomtrans_ignored_4rooms_20230801.txt
+analysis/pickle_dfs_roomtrans_ignored_sensonly_20230731.txt
+analysis/summarize_roomtran_counts_20230802.out
+analysis/tm018_bfit_bcd/tm018_bfit_baseline_windows.txt
+analysis/tm018_bfit_bcd/tm018_bfit_session_windows.txt
